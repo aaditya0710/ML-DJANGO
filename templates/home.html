@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <form action="result" method="get">
+        {% csrf_token %}
+
+        <label for="Skewness">Skewness</label><br>
+        <input type="number" id="Skewness" name="Skewness"><br>
+
+        <label for="curtosis">curtosis</label><br>
+        <input type="number" id="curtosis" name="curtosis"><br>
+
+        <label for="variance">variance</label><br>
+        <input type="number" id="variance" name="variance"><br>
+
+        <label for="entropy">entropy</label><br>
+        <input type="number" id="entropy" name="entropy"><br> <br>
+
+        <input type="submit"></input>
+
+    </form>
+</body>
+</html>
